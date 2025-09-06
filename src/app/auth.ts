@@ -1,5 +1,3 @@
-// src/app/auth.service.ts
-
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
@@ -8,11 +6,11 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class AuthService {
-  private apiUrl = 'https://tu-api.com/login'; // Reemplaza esto con la URL de tu API de login
+  private apiUrl = 'https://tu-api.com/login'; // Asegúrate de que esta URL sea correcta
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) { } // Constructor va aquí
 
-  login(userData: any): Observable<any> {
+  login(userData: any): Observable<any> { // Método va aquí
     return this.http.post(this.apiUrl, userData);
   }
 }

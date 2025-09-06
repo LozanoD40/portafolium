@@ -26,7 +26,7 @@
       <button id="toggleTheme" class="theme-btn" aria-label="Cambiar tema"><i class="fas fa-moon"></i> </button>
       
       <button *ngIf="auth.isAuthenticated$ | async" (click)="logout()">
-        <a  title="Cerrar sesión" aria-label="Cerrar sesión">
+        <a title="Cerrar sesión" aria-label="Cerrar sesión">
           <i class="fas fa-sign-out-alt"></i>
         </a> 
       </button>

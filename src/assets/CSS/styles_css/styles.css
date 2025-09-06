@@ -24,7 +24,7 @@
 :root{
 --background: url("../../imagenes/background-dark.jpg");      /* Fondo general, casi negro */
 --color-background: #0f1117;        /* Fondo general, casi negro */
---color-background-altern: rgba(255, 255, 255, 0.1); /* Fondo general, transparente pero oscuro */
+--color-background-altern: #ffffff1a; /* Fondo general, transparente pero oscuro */
 --color-surface: #1c1f26;           /* Superficies como cajas o navbar */
 --color-text: #e0e0e0;              /* Texto principal, gris claro */
 --color-text-altern: #9ca3af;       /* Texto secundario, gris medio */

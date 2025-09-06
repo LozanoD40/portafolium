@@ -4,11 +4,10 @@ import { LoginComponent  } from './LoginComponent/login.component';
 import { AuthGuard } from '@auth0/auth0-angular';
 
 export const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
   { 
     path: 'home', 
     component: HomeComponent,
-    canActivate: [AuthGuard] // <-- Protege esta ruta
+    canActivate: [AuthGuard] // Ruta protegida
   },
-  { path: 'login', component: LoginComponent },
+  { path: 'login', component: LoginComponent }
 ];
