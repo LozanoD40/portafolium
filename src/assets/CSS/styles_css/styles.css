@@ -2,11 +2,7 @@
 @import "content.css";
 @import "footer.css";
 
-html, body {
-  overflow-x: hidden;
-}
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -14,14 +10,16 @@ html, body {
   line-height: 1.6;
 }
 
-section[id] {
-  scroll-margin-top: 6rem;
+html, body {
+  overflow-x: hidden;
 }
 
-@media (max-width: 768px) {
-  section[id] {
-    scroll-margin-top: 4rem;
-  }
+#main-content {
+  width: 100%;
+}
+
+#footer-content {
+  width: 100%;
 }
 
 :root{

@@ -12,14 +12,13 @@ body {
 
 .contenido {
   padding: 2rem;
-  max-width: 97%;
+  max-width: 1200px; /* Un ancho máximo para pantallas grandes */
   background: var(--color-background-altern);
   border-radius: 15px;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   text-align: justify;
-  margin: 2rem 0;
-  margin-left: 15px;
+  margin: 2rem auto; /* Centramos el contenido en la pantalla */
 }
 
 .titulo {
@@ -31,11 +30,13 @@ body {
 
 @media (max-width: 768px) {
   .contenido {
-    margin-right: 15px;
+    margin: 2rem 15px; /* Ajuste para móviles para que no se pegue a los lados */
   }
 }
 
-/*acerca de mi*/
+/* --------------------
+   Sección "Acerca de mí"
+   -------------------- */
 #home {
   padding-top: 120px;
 }
@@ -50,8 +51,8 @@ body {
 
 #contenido_home {
   display: grid;
-  grid-template-columns: 200px 1fr;
-  gap: 2rem;
+  grid-template-columns: 1fr 8.8fr 0.2fr;
+  gap: 4rem;
   align-items: center;
   justify-content: space-between;
 }
@@ -67,16 +68,17 @@ body {
 
 @media (max-width: 768px) {
   #home {
-  padding-top: 60px;
+    padding-top: 60px;
   }
 
   #contenido_home {
-  grid-template-columns: 1fr;
-  gap: 1rem;
-  justify-items: center;
+    grid-template-columns: 1fr 1fr;
   }
 }
-/*Habilidades*/
+
+/* --------------------
+   Sección "Habilidades"
+   -------------------- */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -113,7 +115,9 @@ body {
   transition: width 1.5s ease-out;
 }
 
-/*Proyecto*/
+/* --------------------
+   Sección "Proyectos"
+   -------------------- */
 .projects-container {
   display: flex;
   flex-wrap: wrap;
@@ -196,7 +200,9 @@ body {
     margin: 0.5rem 10px;
   }
 }
-/*Referencia*/
+/* --------------------
+   Sección "Referencias"
+   -------------------- */
 .referencia {
   background-color: var(--color-background-altern);
   width: 100%;
@@ -242,13 +248,7 @@ body {
   min-width: 100%;
   box-sizing: border-box;
   margin: 0;
-  padding: 40px 10px;
-}
-
-@media (min-width: 769px) {
-  .slide {
-    padding: 40px 80px; 
-  }
+  padding: 40px 80px;
 }
 
 /* Botones de navegación */
@@ -302,7 +302,9 @@ body {
   background-color: var(--color-text-altern);
 }
 
-/*Contactos*/
+/* --------------------
+   Sección "Contacto"
+   -------------------- */
 .form-group {
   display: flex;
   flex-direction: column;
