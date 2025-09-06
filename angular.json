@@ -25,7 +25,11 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/assets/CSS/styles_css/styles.css",
+              "src/assets/CSS/styles_css/login.css" 
+            ],
+            "scripts": [
+              "src/assets/javascript/javascript.js"
             ]
           },
           "configurations": {
@@ -81,8 +85,9 @@
                 "input": "public"
               }
             ],
-            "styles": [
-              "src/styles.css"
+            
+          "scripts": [
+              "src/assets/javascript/javascript.js"
             ]
           }
         }
