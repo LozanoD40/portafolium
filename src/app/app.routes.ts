@@ -4,10 +4,11 @@ import { LoginComponent  } from './LoginComponent/login.component';
 import { AuthGuard } from '@auth0/auth0-angular';
 
 export const routes: Routes = [
+  { path: '', redirectTo: '/home', pathMatch: 'full' }, // ← FALTA ESTA LÍNEA
   { 
     path: 'home', 
     component: HomeComponent,
-    canActivate: [AuthGuard] // Ruta protegida
+    canActivate: [AuthGuard]
   },
   { path: 'login', component: LoginComponent }
 ];

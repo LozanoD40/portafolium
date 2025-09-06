@@ -5,12 +5,13 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class AuthService {
-  private apiUrl = 'https://tu-api.com/login'; // Asegúrate de que esta URL sea correcta
-
-  constructor(private http: HttpClient) { } // Constructor va aquí
-
-  login(userData: any): Observable<any> { // Método va aquí
+// Cambiar el nombre para evitar conflictos
+export class CustomAuthService { // ← Cambiar nombre
+  private apiUrl = 'https://tu-api.com/login';
+  
+  constructor(private http: HttpClient) { }
+  
+  login(userData: any): Observable<any> {
     return this.http.post(this.apiUrl, userData);
   }
 }
