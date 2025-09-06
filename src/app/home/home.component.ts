@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 import { AuthService } from '@auth0/auth0-angular';
 import { Router } from '@angular/router';
 
-// Declara tu función o variable global del script externo aquí
-declare var tuFuncionDeScript: any; // <--- AGREGADO
+// Declara la función global de tu script aquí
+declare var inicializarHomePage: any;
 
 @Component({
   selector: 'app-home',
@@ -29,10 +29,9 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
-    // Llama a tu script externo aquí.
     // Esto se ejecuta después de que el HTML del componente esté listo.
-    if (typeof tuFuncionDeScript !== 'undefined') {
-      tuFuncionDeScript();
+    if (typeof inicializarHomePage !== 'undefined') {
+      inicializarHomePage();
     }
   }
 }

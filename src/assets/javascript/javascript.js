@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+function inicializarHomePage() {
     // ===============================
     // 1. Modo Dark/Light
     // ===============================
@@ -204,4 +204,4 @@ document.addEventListener('DOMContentLoaded', () => {
         showSlide(0);
         startAutoplay();
     }
-});
+};
