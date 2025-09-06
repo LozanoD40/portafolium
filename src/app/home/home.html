@@ -25,7 +25,7 @@
 
       <button id="toggleTheme" class="theme-btn" aria-label="Cambiar tema"><i class="fas fa-moon"></i> </button>
       
-      <button *ngIf="auth.isAuthenticated$ | async" (click)="logout()">
+      <button *ngIf="auth.isAuthenticated$ | async" (click)="logout()" class="logout-btn">
         <a title="Cerrar sesión" aria-label="Cerrar sesión">
           <i class="fas fa-sign-out-alt"></i>
         </a> 
@@ -106,7 +106,7 @@
       <div class="card_project">
         <a href="https://lozanod40.github.io/Calculadora-basica/" target="_blank">
           <div class="card_content">
-            <img src="assets/imagenes/foto_proyecto3_calculadora-basica.jpg" alt="Imagen de una calculadora">
+            <img src="../../assets/imagenes/foto_proyecto3_calculadora-basica.jpg" alt="Imagen de una calculadora">
             <p>Una página de una calculadora</p>
             <p><b>HTML + CSS + JavaScript</b></p>
           </div>
