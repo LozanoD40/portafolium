@@ -1,9 +1,7 @@
-import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ElementRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AuthService } from '@auth0/auth0-angular';
 import { Router } from '@angular/router';
-
-// Declara la función global de tu script aquí
 declare var inicializarHomePage: any;
 
 @Component({
@@ -14,14 +12,17 @@ declare var inicializarHomePage: any;
   styleUrl: '../../assets/CSS/styles_css/styles.css'
 })
 export class HomeComponent implements OnInit, AfterViewInit {
-  constructor(public auth: AuthService, private router: Router) { }
+  constructor(public auth: AuthService, private router: Router, private el: ElementRef) { }
 
   logout() {
     this.auth.logout({ logoutParams: { returnTo: document.location.origin } });
   }
 
-  public goToSection(fragment: string): void {
-    this.router.navigate(['/'], { fragment });
+  goToSection(sectionId: string): void {
+    const sectionElement = this.el.nativeElement.querySelector(`#${sectionId}`);
+    if (sectionElement) {
+      sectionElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   }
 
   ngOnInit() {
@@ -29,7 +30,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
-    // Esto se ejecuta después de que el HTML del componente esté listo.
     if (typeof inicializarHomePage !== 'undefined') {
       inicializarHomePage();
     }

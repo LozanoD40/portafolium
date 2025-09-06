@@ -50,8 +50,8 @@ body {
 
 #contenido_home {
   display: grid;
-  grid-template-columns: 1fr 8.8fr 0.2fr;
-  gap: 4rem;
+  grid-template-columns: 200px 1fr;
+  gap: 2rem;
   align-items: center;
   justify-content: space-between;
 }
@@ -71,11 +71,11 @@ body {
   }
 
   #contenido_home {
-    grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  justify-items: center;
   }
-
 }
-
 /*Habilidades*/
 .skills-grid {
   display: grid;
@@ -242,7 +242,13 @@ body {
   min-width: 100%;
   box-sizing: border-box;
   margin: 0;
-  padding: 40px 80px;
+  padding: 40px 10px;
+}
+
+@media (min-width: 769px) {
+  .slide {
+    padding: 40px 80px; 
+  }
 }
 
 /* Botones de navegación */
