@@ -9,7 +9,7 @@ import { AuthService } from '@auth0/auth0-angular'; // Para usar Auth0
   standalone: true,
   imports: [CommonModule],
   templateUrl: './home.html',
-  styleUrls: ['./home.css']
+  //styleUrls: ['./assets/styles.css']
 })
 export class HomeComponent implements OnInit, AfterViewInit {
   constructor(public auth: AuthService) { }
