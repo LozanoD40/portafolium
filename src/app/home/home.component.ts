@@ -1,8 +1,7 @@
-// src/app/home/home.component.ts
-
 import { Component, OnInit, AfterViewInit } from '@angular/core';
-import { CommonModule } from '@angular/common'; // Para usar *ngIf
-import { AuthService } from '@auth0/auth0-angular'; // Para usar Auth0
+import { CommonModule } from '@angular/common';
+import { AuthService } from '@auth0/auth0-angular';
+import { Router } from '@angular/router'; // Importar Router
 
 @Component({
   selector: 'app-home',
@@ -12,13 +11,18 @@ import { AuthService } from '@auth0/auth0-angular'; // Para usar Auth0
   styleUrl: '../../assets/CSS/styles_css/styles.css'
 })
 export class HomeComponent implements OnInit, AfterViewInit {
-  constructor(public auth: AuthService) { }
+  // Inyectar el Router en el constructor
+  constructor(public auth: AuthService, private router: Router) { }
 
   logout() {
     this.auth.logout({ logoutParams: { returnTo: document.location.origin } });
   }
-  
-  // FALTAN ESTOS MÉTODOS:
+
+  // >>> Agrega esta función <<<
+  public goToSection(fragment: string): void {
+    this.router.navigate(['/'], { fragment });
+  }
+
   ngOnInit() {
     // Lógica de inicialización
   }
