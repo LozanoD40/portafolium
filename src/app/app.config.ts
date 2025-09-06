@@ -11,7 +11,10 @@ export const appConfig: ApplicationConfig = {
     provideRouter(routes),
     provideAuth0({
       domain: 'dev-pvzzaueuqbmt31f6.us.auth0.com',
-      clientId: 'GvU0zT3jYx08geYMICM0nha1VaJWftiQ'
+      clientId: 'GvU0zT3jYx08geYMICM0nha1VaJWftiQ',
+      authorizationParams: { // <-- Añade este objeto
+        redirect_uri: window.location.origin
+      }
     })
   ]
 };
