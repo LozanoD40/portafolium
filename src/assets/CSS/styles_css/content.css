@@ -48,7 +48,7 @@ body {
 }
 
 #contenido_home {
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 4rem;
   align-items: center;
   justify-content: space-between;
