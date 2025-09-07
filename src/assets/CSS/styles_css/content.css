@@ -74,14 +74,24 @@ align-items: center;
 justify-content: space-between;
 }
 
+.btn-leer{
+  display: none;
+}
+
 @media (max-width: 768px) {
   #home {
     padding-top: 60px;
     }
 
-#contenido_home {
-  display: flex;
-  flex-direction: column;
+  #contenido_home {
+    display: flex;
+    flex-direction: column;
+}
+
+  .btn-leer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 }
 
