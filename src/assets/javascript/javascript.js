@@ -1,5 +1,14 @@
 function inicializarHomePage() {
     // ===============================
+    // 0. ViewportMeta
+    // ===============================
+    const viewportMeta = document.createElement('meta');
+
+    viewportMeta.name = 'viewport';
+    viewportMeta.content = 'width=device-width, initial-scale=1.0';
+    document.head.appendChild(viewportMeta);
+
+    // ===============================
     // 1. Modo Dark/Light
     // ===============================
     const toggleBtn = document.getElementById("toggleTheme");

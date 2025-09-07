@@ -1,7 +1,7 @@
 .footer_lu {
   font-size: 1.5rem;
-  display: flex;        /* Activa Flexbox */
-  gap: 13%;            /* Espacio entre enlaces para pantallas grandes */
+  display: flex; 
+  gap: 13%; 
   list-style: none;
   margin-left: 1rem;
   margin-bottom: 2rem;
@@ -24,26 +24,25 @@
   padding: 0.5rem 1rem;
 }
 
-/* Media queries para pantallas más pequeñas */
 @media (max-width: 768px) {
   .footer_lu {
-    gap: 4%;  /* Reduce el espacio entre elementos en tablets */
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan si no caben */
-    justify-content: center; /* Centra los elementos */
+    gap: 4%; 
+    flex-wrap: wrap; 
+    justify-content: center; 
   }
   
   .footer_lu a {
-    padding: 0.4rem 0.8rem; /* Reduce un poco el padding */
+    padding: 0.4rem 0.8rem; 
   }
 }
 
 @media (max-width: 480px) {
   .footer_lu {
-    gap: 2%;  /* Reduce aún más el espacio en móviles */
+    gap: 2%; 
   }
   
   .footer_lu a {
-    padding: 0.3rem 0.6rem; /* Reduce más el padding en móviles */
-    font-size: 1.2rem; /* Reduce el tamaño de los iconos */
+    padding: 0.3rem 0.6rem; 
+    font-size: 1.2rem;
   }
 }

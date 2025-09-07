@@ -49,8 +49,7 @@ body {
 }
 
 #contenido_home {
-  display: grid;
-  grid-template-columns: 1fr 8.8fr 0.2fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 4rem;
   align-items: center;
   justify-content: space-between;
