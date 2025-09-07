@@ -13,7 +13,7 @@ body {
 .contenido {
   padding: 2rem;
   max-width: none; 
-  width: 90%; 
+  width: 97%; 
   background: var(--color-background-altern);
   border-radius: 15px;
   backdrop-filter: blur(10px);
@@ -55,7 +55,7 @@ body {
    Sección "Acerca de mí"
    -------------------- */
 #home {
-  padding-top:  180px;
+  padding-top:  120px;
 }
 
 #imagen_home {
