@@ -1,9 +1,15 @@
 /*Body*/
+[id] {
+  padding-top: 80px; /* Crea un espacio superior */
+  margin-top: -80px; /* Mueve el elemento hacia arriba para que el scroll funcione correctamente */
+}
+
 body {
   color: var(--color-text);
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  min-height: 100%;
   background: var(--background) no-repeat center center fixed;
   background-size: cover;
   flex-direction: column;
@@ -11,6 +17,7 @@ body {
 
 .contenido {
   padding: 2rem;
+  max-width: 97%;
   background: var(--color-background-altern);
   border-radius: 15px;
   backdrop-filter: blur(10px);
@@ -48,7 +55,8 @@ body {
 }
 
 #contenido_home {
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  display: grid;
+  grid-template-columns: 1fr 8.8fr 0.2fr;
   gap: 4rem;
   align-items: center;
   justify-content: space-between;

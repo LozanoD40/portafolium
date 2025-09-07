@@ -2,7 +2,7 @@
 @import "content.css";
 @import "footer.css";
 
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,17 +10,22 @@
   line-height: 1.6;
 }
 
-html, body{
-  min-height: 100vh;
-  width: 100%
+#main-content {
+  width: 100%;
+  height: 100%;
+} 
+
+#footer-content{
+  width: 100%;
+  height: 100%;
 }
 
 :root{
 --background: url("../../imagenes/background-dark.jpg");      /* Fondo general, casi negro */
 --color-background: #0f1117;        /* Fondo general, casi negro */
---color-background-altern: #ffffff1a; /* Fondo general, transparente pero oscuro */
+--color-background-altern: rgba(255, 255, 255, 0.1); /* Fondo general, transparente pero oscuro */
 --color-surface: #1c1f26;           /* Superficies como cajas o navbar */
---color-text: #c9c9c9e2;              /* Texto principal, gris claro */
+--color-text: #e0e0e0;              /* Texto principal, gris claro */
 --color-text-altern: #9ca3af;       /* Texto secundario, gris medio */
 --color-text-hover: #3b82f6;        /* Azul claro para hover */
 --color-accent: #2563eb;            /* Azul fuerte para detalles (barras de progreso, botones) */
@@ -42,4 +47,6 @@ html, body{
   --color-border: #d1d5db;            /* Gris suave */
   --color-error: #dc2626;             /* Rojo para errores */
 }
+
+
 
