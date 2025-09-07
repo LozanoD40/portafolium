@@ -37,14 +37,23 @@
         <h2 class="titulo">Acerca de mi</h2>
         <div id="contenido_home">
           <img src="assets/imagenes/foto-de-perfil.jpg" alt="Foto de perfil" id="imagen_home">
-          <p>¡Hola! Soy <b>Diego Agustin Lozano Mora</b>, un programador en formación apasionado por crear soluciones
-            prácticas y creativas con código.
-            Me interesa el desarrollo web y disfruto transformar ideas en proyectos funcionales.
+          <p>
+          ¡Hola! Soy <b>Diego Agustin Lozano Mora</b>, un programador en formación apasionado por crear soluciones
+          prácticas y creativas con código.
+          Me interesa el desarrollo web y disfruto transformar ideas en proyectos funcionales.
+          @if (mostrarTextoExtra) {
+          <span>
             <br>Actualmente me estoy especializando en HTML, CSS y JavaScript, mientras exploro frameworks modernos y
             buenas prácticas de programación.
             Mi objetivo es crecer como desarrollador fullstack y aportar a proyectos que generen impacto positivo. Soy
             curioso, autodidacta y me motiva aprender algo nuevo cada día.
-          </p>
+          </span>
+          }
+        </p>
+        <button class="btn-leer" (click)="toggleTexto()">
+          {{ mostrarTextoExtra ? 'Leer menos' : 'Leer más' }}
+          <i class="fa" [ngClass]="mostrarTextoExtra ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
+        </button>
         </div>
       </div>
     </section>
