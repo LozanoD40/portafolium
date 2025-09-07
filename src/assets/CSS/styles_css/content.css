@@ -74,22 +74,14 @@ body {
   justify-content: space-between;
 }
 
-.skill_li {
-  background-color: var(--color-accent);
-  flex-direction: column;
-  text-align: center;
-  border-radius: 10%;
-  display: flex;
-  margin: 0 0 2.5rem 0;
-}
-
 @media (max-width: 768px) {
   #home {
     padding-top: 60px;
   }
 
   #contenido_home {
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -103,6 +95,15 @@ body {
   margin-top: 40px;
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+.skill_li {
+  background-color: var(--color-accent);
+  flex-direction: column;
+  text-align: center;
+  border-radius: 10%;
+  display: flex;
+  margin: 0 0 2.5rem 0;
 }
 
 .skill-item {
