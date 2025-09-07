@@ -12,7 +12,7 @@
 
 #main-content {
   max-width: none; 
-  width: calc(100% - 4rem);
+  width: calc(90% - 4rem);
   height: 100%;
 } 
 
