@@ -10,9 +10,9 @@
   line-height: 1.6;
 }
 
-#body_content {
+html, body{
   min-height: 100vh;
-  min-width: 100vw
+  width: 100%
 }
 
 :root{
