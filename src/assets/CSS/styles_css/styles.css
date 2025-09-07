@@ -10,11 +10,7 @@
   line-height: 1.6;
 }
 
-#main-content {
-  max-width: 1200px;
-}
-
-#footer-content {
+#body_content {
   max-width: 100%;
 }
 
