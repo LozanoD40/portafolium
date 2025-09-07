@@ -23,7 +23,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
     const sectionElement = this.el.nativeElement.querySelector(`#${sectionId}`);
     if (sectionElement) {
       const headerElement = document.querySelector<HTMLElement>('#header');
-      const headerHeight = headerElement?.offsetHeight || 80;
+      const headerHeight = headerElement?.offsetHeight || 120;
       const elementPosition = sectionElement.offsetTop;
       const offsetPosition = elementPosition - headerHeight - 20; // 20px de margen adicional
       
