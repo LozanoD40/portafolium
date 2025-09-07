@@ -12,14 +12,15 @@ body {
 
 .contenido {
   padding: 2rem;
-  max-width: 1200px; 
+  max-width: 1400px; 
   background: var(--color-background-altern);
   border-radius: 15px;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   text-align: justify;
   margin: 2rem auto;
-  justify-content: center; 
+  display: flex;
+  justify-content: center;
 }
 
 .titulo {
