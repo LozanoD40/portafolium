@@ -86,23 +86,24 @@ justify-content: space-between;
   #contenido_home {
     display: flex;
     flex-direction: column;
-}
+  }
 
   .btn-leer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: none;
-    color: none;
+    background-color: transparent; 
+    color: var(--color-text);      
     border: none;
     cursor: pointer;
-}
+  }
 
- .btn-leer i {
-  font-size: 1.5rem;
-  margin-left: 0.5rem;
-  color: var(--color-text);
-}
+  .btn-leer i {
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+    color: var(--color-text); 
+  }
+
 }
 
 /* --------------------
