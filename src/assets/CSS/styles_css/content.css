@@ -12,14 +12,12 @@ body {
 
 .contenido {
   padding: 2rem;
-  max-width: 1250px; 
   background: var(--color-background-altern);
   border-radius: 15px;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   text-align: justify;
   margin: 2rem 1rem;
-  
 }
 
 .titulo {
