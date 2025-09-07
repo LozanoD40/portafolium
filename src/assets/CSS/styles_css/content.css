@@ -12,7 +12,7 @@ body {
 
 .contenido {
   padding: 2rem;
-  max-width: 1200px; /* Un ancho máximo para pantallas grandes */
+  max-width: 100%; /* Un ancho máximo para pantallas grandes */
   background: var(--color-background-altern);
   border-radius: 15px;
   backdrop-filter: blur(10px);
