@@ -1,10 +1,6 @@
 /*Body*/
-section [id]{
-  padding-top: 128px;
-}
-
 body {
-  color: var(--color-text);
+ color: var(--color-text);
   display: flex;
   justify-content: center;
   align-items: flex-start;
