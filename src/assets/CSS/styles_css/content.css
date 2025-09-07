@@ -12,7 +12,8 @@ body {
 
 .contenido {
   padding: 2rem;
-  max-width: 97%;
+  max-width: none; 
+  width: calc(100% - 2rem);
   background: var(--color-background-altern);
   border-radius: 15px;
   backdrop-filter: blur(10px);
@@ -30,7 +31,13 @@ body {
 
 @media (max-width: 768px) {
   .contenido {
-    margin: 2rem 0.9rem; 
+    width: calc(100% - 1.8rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .contenido {
+    width: calc(100% - 1rem);
   }
 }
 
