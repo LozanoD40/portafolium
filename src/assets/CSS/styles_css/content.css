@@ -12,7 +12,7 @@ body {
 
 .contenido {
   padding: 2rem;
-  max-width: 1200px; 
+  max-width: 90%; 
   background: var(--color-background-altern);
   border-radius: 15px;
   backdrop-filter: blur(10px);
