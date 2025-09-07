@@ -74,10 +74,6 @@ align-items: center;
 justify-content: space-between;
 }
 
-.btn-leer{
-  display: none;
-}
-
 @media (max-width: 768px) {
   #home {
     padding-top: 60px;
