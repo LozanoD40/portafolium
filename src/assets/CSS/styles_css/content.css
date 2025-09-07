@@ -12,8 +12,8 @@ body {
 
 .contenido {
   padding: 2rem;
-  max-width: none; 
-  width: calc(100% - 4rem);
+  max-width: 1400px; /* Ancho máximo en pantallas grandes */
+  width: 90%; /* Ancho relativo */
   background: var(--color-background-altern);
   border-radius: 15px;
   backdrop-filter: blur(10px);
@@ -29,15 +29,25 @@ body {
   margin-bottom: 1rem;
 }
 
+@media (max-width: 1200px) {
+  .contenido {
+    width: 95%;
+  }
+}
+
 @media (max-width: 768px) {
   .contenido {
-    width: calc(100% - 1.8rem);
+    width: 95%;
+    padding: 1.5rem;
+    margin: 1.5rem 0.6rem;
   }
 }
 
 @media (max-width: 480px) {
   .contenido {
-    width: calc(100% - 1rem);
+    width: 98%;
+    padding: 1rem;
+    margin: 1rem 0.4rem;
   }
 }
 
@@ -45,7 +55,7 @@ body {
    Sección "Acerca de mí"
    -------------------- */
 #home {
-  padding-top:  150px;
+  padding-top:  180px;
 }
 
 #imagen_home {
