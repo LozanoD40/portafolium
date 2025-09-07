@@ -11,12 +11,14 @@
 }
 
 #main-content {
-  width: 100%;
+  max-width: none; 
+  width: calc(100% - 4rem);
   height: 100%;
 } 
 
 #footer-content{
-  width: 100%;
+  max-width: none; 
+  width: calc(100% - 4rem);
   height: 100%;
 }
 

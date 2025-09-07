@@ -13,7 +13,7 @@ body {
 .contenido {
   padding: 2rem;
   max-width: none; 
-  width: calc(100% - 2rem);
+  width: calc(100% - 4rem);
   background: var(--color-background-altern);
   border-radius: 15px;
   backdrop-filter: blur(10px);
