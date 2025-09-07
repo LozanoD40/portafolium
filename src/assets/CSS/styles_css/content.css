@@ -1,7 +1,6 @@
 /*Body*/
-[id] {
-  padding-top: 80px; /* Crea un espacio superior */
-  margin-top: -80px; /* Mueve el elemento hacia arriba para que el scroll funcione correctamente */
+section [id]{
+  padding-top: 128px;
 }
 
 body {
