@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { AuthService } from '@auth0/auth0-angular';
 import { Router } from '@angular/router';
 
+declare function inicializarHomePage(): void;
+
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -43,6 +45,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
-    // Lógica que depende de la vista, como la inicialización de carruseles
+    // 2. Llama a la función JavaScript externa aquí, una vez que la vista ha sido renderizada.
+    inicializarHomePage();
   }
 }
