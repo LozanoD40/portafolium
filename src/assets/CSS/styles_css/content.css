@@ -92,6 +92,10 @@ justify-content: space-between;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: none;
+    color: var(--color-text);
+    border: none;
+    cursor: pointer;
 }
 }
 
