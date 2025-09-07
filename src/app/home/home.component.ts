@@ -247,7 +247,7 @@ import { Router } from '@angular/router';
     }
 
     :root {
-      --background: url("../assets/imagenes/background-dark.jpg"); 
+      //--background: url("../assets/imagenes/background-dark.jpg"); 
       --color-background: #0f1117; 
       --color-background-altern: rgba(255, 255, 255, 0.1); 
       --color-surface: #1c1f26; 
@@ -262,7 +262,7 @@ import { Router } from '@angular/router';
     }
 
     .light-mode {
-      --background: url("../assets/imagenes/background-light.jpg"); 
+      //--background: url("../assets/imagenes/background-light.jpg"); 
       --color-background: #e4e9ee; 
       --color-background-altern: rgba(0, 0, 0, 0.05);
       --color-surface: #ffffff; 
